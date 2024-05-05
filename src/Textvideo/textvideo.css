@@ -1,0 +1,158 @@
+.text-video-container {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellow-box {
+  width: 90%;
+  height: 100px;
+  background-color: yellow;
+  position: relative;
+}
+
+.movin-text {
+  position: absolute;
+  margin: 0px;
+  animation: moveText 3s infinite, growText 3s infinite;
+  /* animation-delay: 10s;  */
+  /* animation-fill-mode: both; */
+}
+.movin-text2 {
+  position: absolute;
+  margin: 0px;
+  animation: moveText2 3s infinite, growText2 3s infinite;
+  /* animation-delay: 5s;  */
+  /* animation-fill-mode: both; */
+}
+.movin-text3 {
+  position: absolute;
+  margin: 0px;
+  animation: moveText3 3s infinite, growText3 3s infinite;
+  /* animation-delay: 6s;  */
+  /* animation-fill-mode: both; */
+}
+
+@keyframes moveText3 {
+  0% {
+    transform: translateY(0) translateX(230px);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes growText3 {
+  0% {
+    font-size: 30px;
+  }
+
+  100% {
+    font-size: 80px;
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  40% {
+    transform: translateY(-30px) translateX(0);
+  }
+  60% {
+    transform: translateY(-30px) translateX(-150px);
+  }
+  80% {
+    transform: translateY(-30px) translateX(-150px);
+  }
+  100% {
+    transform: translateY(-30px) translateX(-150px);
+  }
+}
+
+@keyframes growText {
+  0% {
+    font-size: 80px;
+  }
+  30% {
+    font-size: 40px;
+  }
+  40% {
+    font-size: 40px;
+  }
+  60% {
+    font-size: 40px;
+  }
+  80% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
+@keyframes moveText2 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  40% {
+    transform: translateY(20px) translateX(0);
+  }
+  60% {
+    transform: translateY(20px) translateX(-150px);
+  }
+  80% {
+    transform: translateY(20px) translateX(-150px);
+  }
+  100% {
+    transform: translateY(20px) translateX(-150px);
+  }
+}
+
+@keyframes growText2 {
+  0% {
+    font-size: 20px;
+  }
+
+  50% {
+    font-size: 40px;
+  }
+  60% {
+    font-size: 40px;
+  }
+  80% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
+@keyframes moveText4 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes growText4 {
+  0% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 35px;
+  }
+}
